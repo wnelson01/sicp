@@ -1,0 +1,12 @@
+(define (sum x y) (+ x y))
+(define (square x) (* x x))
+(define (sumSquareTwoLargest x y z) 
+    (cond
+        ((>= x y z) (sum (square x) (square y)))
+        ((>= x z y) (sum (square x) (square z)))
+        ((>= z y x) (sum (square z) (square y)))
+        ((>= z x y) (sum (square z) (square x)))
+        ((>= y x z) (sum (square y) (square x)))
+        ((>= y z x) (sum (square y) (square z)))
+    )
+)
