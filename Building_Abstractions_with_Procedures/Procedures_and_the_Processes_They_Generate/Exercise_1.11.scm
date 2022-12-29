@@ -9,6 +9,5 @@
         ((= count 2) c)
         (else (f-iter b c (+ (* 3 a) (* 2 b) c) (- count 1)))))
 
-
 (f 11)
 (f-iter 0 1 2 11)
